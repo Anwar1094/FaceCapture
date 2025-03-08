@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camera Capture</title>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      margin: 0px;
+      padding: 0px;
+      align-items: center;
+      justify-content: center;
+    }
+    .main-container {
+      display: flex;
+      border-radius: 10px;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      background-color: white;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+    video {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 80px;
+      padding: 4px;
+      border: 1px solid #000;
+    }
+    #captured-images {
+      display: flex;
+      gap: 10px;
+    }
+    img {
+      max-width: 100px;
+    }
+    .main-container input {
+      width: 180px;
+      height: 30px;
+      font-size: 16px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      outline: none;
+    }
+    div#entry{
+      display: flex;
+      flex-direction: column;
+    }
+    #id-lbl{
+      padding: 0px;
+    }
+    .main-container button {
+      width: fit-content;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      color: white;
+      background-color: cornflowerblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <h1>Register Your Face Here!</h1>
+    <video id="video" autoplay></video>
+    <br>
+    <div id="entry">
+      <label for="id-inp" id="id-lbl">UserName</label>
+      <input type="text" id="id-inp">
+    </div>
+    <button id="captureBtn">Capture Photo</button>
+    <div id="captured-images"></div>
+  </div>  
+  <script src="script.js"></script>
+</body>
+</html>
