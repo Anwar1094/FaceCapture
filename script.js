@@ -40,7 +40,7 @@ function captureImage() {
 
 // Function to send image data to the server
 function sendImageToServer(imageDataUrl, id) {
-  fetch('http://localhost:3000/save_image', {
+  fetch('https://facecapture.onrender.com/save_image', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
