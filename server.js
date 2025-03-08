@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: 'http://127.0.0.1:5501'  // only allow requests from this domain
+    origin: 'https://facecapture.onrender.com'  // only allow requests from this domain
   }));
 
 app.use(bodyParser.json({ limit: '50mb' })); 
