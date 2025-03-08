@@ -12,7 +12,7 @@ app.get('/', (req, res)=>{
   res.send(`Hello ${port}`);
 })
 app.use(cors({
-    origin: 'https://facecapture.onrender.com'  // only allow requests from this domain
+    origin: 'https://facecapture.onrender.com/'  // only allow requests from this domain
   }));
 
 app.use(bodyParser.json({ limit: '50mb' })); 
